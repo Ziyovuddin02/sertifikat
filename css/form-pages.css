@@ -1,0 +1,259 @@
+*{
+    box-sizing:border-box;
+    font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root{
+    --primary:#062b6f;
+    --primary-light:#0d6efd;
+    --page-bg:#f4f7fb;
+    --text:#111827;
+    --muted:#6b7280;
+    --border:#dfe5ec;
+    --white:#ffffff;
+}
+
+body.form-page{
+    min-height:100vh;
+    margin:0;
+    padding:45px 20px;
+    background:
+        radial-gradient(circle at top right, rgba(13,110,253,.08), transparent 28%),
+        var(--page-bg);
+    color:var(--text);
+}
+
+.form-shell{
+    width:100%;
+    max-width:1280px;
+    margin:0 auto;
+}
+
+.form-card{
+    border:0;
+    border-radius:22px;
+    overflow:hidden;
+    background:var(--white);
+    box-shadow:0 18px 45px rgba(15,23,42,.09);
+}
+
+.form-card-header{
+    min-height:105px;
+    padding:24px 30px;
+    background:linear-gradient(135deg, var(--primary), #0b4ca3);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.form-title-area{
+    display:flex;
+    align-items:center;
+    gap:17px;
+}
+
+.form-title-icon{
+    width:54px;
+    height:54px;
+    flex-shrink:0;
+    border-radius:15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(255,255,255,.14);
+    border:1px solid rgba(255,255,255,.18);
+    font-size:25px;
+}
+
+.form-title-area h4{
+    margin:0 0 5px;
+    font-size:25px;
+    font-weight:800;
+}
+
+.form-title-area p{
+    margin:0;
+    font-size:14px;
+    color:rgba(255,255,255,.75);
+}
+
+.back-button{
+    display:inline-flex;
+    align-items:center;
+    gap:9px;
+    padding:11px 17px;
+    border:1px solid rgba(255,255,255,.45);
+    border-radius:11px;
+    color:#fff;
+    text-decoration:none;
+    font-weight:700;
+    transition:.25s;
+}
+
+.back-button:hover{
+    background:#fff;
+    border-color:#fff;
+    color:var(--primary);
+}
+
+.form-card-body{
+    padding:32px;
+}
+
+.form-section{
+    border:1px solid #e8edf4;
+    border-radius:17px;
+    padding:24px;
+    margin-bottom:22px;
+    background:#fff;
+}
+
+.form-section-title{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:22px;
+    padding-bottom:14px;
+    border-bottom:1px solid #edf1f6;
+    color:var(--primary);
+    font-size:17px;
+    font-weight:800;
+}
+
+.form-label{
+    margin-bottom:8px;
+    font-size:14px;
+    font-weight:700;
+    color:#374151;
+}
+
+.form-control,
+.form-select{
+    min-height:51px;
+    border:1px solid var(--border);
+    border-radius:11px;
+    padding:11px 14px;
+    background:#fbfcfe;
+    color:var(--text);
+    font-size:15px;
+    box-shadow:none !important;
+    transition:.2s;
+}
+
+textarea.form-control{
+    min-height:105px;
+    resize:vertical;
+}
+
+.form-control:focus,
+.form-select:focus{
+    border-color:var(--primary-light);
+    background:#fff;
+    box-shadow:0 0 0 4px rgba(13,110,253,.10) !important;
+}
+
+.form-control[readonly]{
+    background:#eef4ff;
+    color:var(--primary);
+    font-weight:700;
+}
+
+.form-control::placeholder{
+    color:#9ca3af;
+}
+
+.form-actions{
+    display:flex;
+    justify-content:flex-end;
+    flex-wrap:wrap;
+    gap:11px;
+    padding-top:4px;
+}
+
+.form-actions .btn{
+    min-height:46px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:10px 19px;
+    border-radius:11px;
+    border:0;
+    font-weight:700;
+    transition:.22s;
+}
+
+.form-actions .btn:hover{
+    transform:translateY(-2px);
+}
+
+.btn-clear{
+    background:#eef1f5;
+    color:#4b5563;
+}
+
+.btn-clear:hover{
+    background:#e1e6ed;
+    color:#111827;
+}
+
+.btn-preview{
+    background:#15803d;
+    color:#fff;
+}
+
+.btn-preview:hover{
+    background:#116b33;
+    color:#fff;
+}
+
+.btn-save{
+    background:var(--primary-light);
+    color:#fff;
+}
+
+.btn-save:hover{
+    background:#095dcc;
+    color:#fff;
+}
+
+@media(max-width:768px){
+
+    body.form-page{
+        padding:18px 12px;
+    }
+
+    .form-card-header{
+        min-height:auto;
+        padding:20px;
+        align-items:flex-start;
+        flex-direction:column;
+    }
+
+    .form-title-area h4{
+        font-size:21px;
+    }
+
+    .back-button{
+        width:100%;
+        justify-content:center;
+    }
+
+    .form-card-body{
+        padding:18px;
+    }
+
+    .form-section{
+        padding:18px;
+    }
+
+    .form-actions{
+        flex-direction:column;
+    }
+
+    .form-actions .btn{
+        width:100%;
+    }
+}

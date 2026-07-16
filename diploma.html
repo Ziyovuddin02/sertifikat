@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diplom | Biznes Fabrika</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/diploma.css">
+</head>
+<body>
+<div class="diploma-actions">
+    <button onclick="downloadDiploma()" class="btn btn-primary"><i class="bi bi-file-earmark-pdf"></i> PDF yuklash</button>
+    <button onclick="window.print()" class="btn btn-success"><i class="bi bi-printer"></i> Print</button>
+    <button onclick="window.location.href='dashboard.html'" class="btn btn-secondary"><i class="bi bi-arrow-left"></i> Ortga</button>
+</div>
+
+<main class="diploma-sheet" id="diplomaSheet">
+    <article class="diploma-card uz-card">
+        <div class="corner corner-tl"></div><div class="corner corner-tr"></div>
+        <div class="corner corner-bl"></div><div class="corner corner-br"></div>
+        <div class="diploma-frame">
+            <div class="pattern"></div><div class="watermark"><img src="img/logo.png" alt=""></div>
+            <div class="diploma-content">
+                <img class="diploma-logo" src="img/logo1.png" alt="Biznes Fabrika">
+                <h2>O‘ZBEKISTON RESPUBLIKASI</h2>
+                <h3>“JADIDLAR AVLODI” O‘QUV MARKAZI</h3>
+                <p class="institution">NODAVLAT TA’LIM MUASSASASI</p>
+                <div class="title-row"><h1>DIPLOM</h1><strong>№ <span data-bind="diplomaNo"></span></strong></div>
+                <p class="holder-label">Mazkur diplom egasi</p>
+                <div class="student-name" data-bind="fullname"></div>
+                <p class="diploma-text"><strong data-bind="course"></strong> yo‘nalishi bo‘yicha <strong data-bind="duration"></strong>lik nazariy va amaliy kursni <strong data-bind="endYear"></strong> yilda muvaffaqiyatli tamomladi.</p>
+                <p class="study-period"><span data-bind="startDate"></span> — <span data-bind="endDate"></span></p>
+                <div class="signature"><span>Rahbar:</span><strong data-bind="director"></strong></div>
+                <div class="card-bottom">
+                    <div><div class="issued"><strong>Berildi:</strong> <span data-bind="issueDate"></span></div><div class="footer-name">TOSHKENT VILOYATI “JADIDLAR AVLODI”</div></div>
+                    <div class="qr-wrap"><div id="qrcodeUz"></div><small data-bind="diplomaNo"></small></div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="diploma-card en-card">
+        <div class="corner corner-tl"></div><div class="corner corner-tr"></div>
+        <div class="corner corner-bl"></div><div class="corner corner-br"></div>
+        <div class="diploma-frame">
+            <div class="pattern"></div><div class="watermark"><img src="img/logo.png" alt=""></div>
+            <div class="diploma-content">
+                <img class="diploma-logo" src="img/logo1.png" alt="Biznes Fabrika">
+                <h2>REPUBLIC OF UZBEKISTAN</h2>
+                <h3>“JADIDLAR AVLODI” STUDY CENTER</h3>
+                <p class="institution">NON-GOVERNMENT EDUCATIONAL INSTITUTION</p>
+                <div class="title-row"><h1>DIPLOM</h1><strong>№ <span data-bind="diplomaNo"></span></strong></div>
+                <p class="holder-label">This diploma holder</p>
+                <div class="student-name" data-bind="fullname"></div>
+                <p class="diploma-text" style="font-size: 3.7mm;">successfully completed the <strong data-bind="duration"></strong> theoretical and practical course in <strong data-bind="course"></strong> in <strong data-bind="endYear"></strong>.</p>
+                <p class="study-period"><span data-bind="startDate"></span> — <span data-bind="endDate"></span></p>
+                <div class="signature"><span>Leader:</span><strong data-bind="director"></strong></div>
+                <div class="card-bottom">
+                    <div><div class="issued"><strong>Issued:</strong> <span data-bind="issueDate"></span></div><div class="footer-name">TASHKENT REGION “JADIDLAR AVLODI”</div></div>
+                    <div class="qr-wrap"><div id="qrcodeEn"></div><small data-bind="diplomaNo"></small></div>
+                </div>
+            </div>
+        </div>
+    </article>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script src="js/diploma.js"></script>
+</body>
+</html>

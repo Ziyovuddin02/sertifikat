@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Yangi diplom | Biznes Fabrika
+    </title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Zamonaviy ikonlar -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- Ma'lumotnoma va sertifikat formasidagi umumiy dizayn -->
+    <link
+        rel="stylesheet"
+        href="css/form-pages.css"
+    >
+</head>
+
+<body class="form-page">
+
+<div class="form-shell">
+
+    <div class="form-card">
+
+        <!-- Yuqori qism -->
+        <div class="form-card-header">
+
+            <div class="form-title-area">
+
+                <div class="form-title-icon">
+                    <i class="bi bi-mortarboard-fill"></i>
+                </div>
+
+                <div>
+
+                    <h4>
+                        Yangi diplom yaratish
+                    </h4>
+
+                    <p>
+                        O‘quvchi va diplom ma’lumotlarini kiriting
+                    </p>
+
+                </div>
+
+            </div>
+
+            <a
+                href="dashboard.html"
+                class="back-button"
+            >
+                <i class="bi bi-arrow-left"></i>
+                Ortga
+            </a>
+
+        </div>
+
+
+        <!-- Forma qismi -->
+        <div class="form-card-body">
+
+            <form id="diplomaForm">
+
+                <div class="form-section">
+
+                    <div class="form-section-title">
+
+                        <i class="bi bi-person-vcard-fill"></i>
+
+                        Diplom ma’lumotlari
+
+                    </div>
+
+                    <div class="row g-3">
+
+                        <!-- F.I.Sh -->
+                        <div class="col-12">
+
+                            <label
+                                for="fullname"
+                                class="form-label"
+                            >
+                                O‘quvchining F.I.Sh.
+                                <span class="required-mark">*</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="fullname"
+                                class="form-control"
+                                placeholder="Familiya Ism Sharif"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Kurs -->
+                        <div class="col-md-6">
+
+                            <label
+                                for="course"
+                                class="form-label"
+                            >
+                                O‘qigan kursi
+                                <span class="required-mark">*</span>
+                            </label>
+
+                            <select
+                                id="course"
+                                class="form-select"
+                                required
+                            >
+
+                                <option value="">
+                                    Kursni tanlang
+                                </option>
+
+                                <option>
+                                    Frontend Dasturlash
+                                </option>
+
+                                <option>
+                                    Backend Node.js
+                                </option>
+
+                                <option>
+                                    Python
+                                </option>
+
+                                <option>
+                                    Python AI
+                                </option>
+
+                                <option>
+                                    Grafik Dizayn
+                                </option>
+
+                                <option>
+                                    Kompyuter Savodxonligi
+                                </option>
+
+                                <option>
+                                    Ingliz tili
+                                </option>
+
+                                <option>
+                                    SMM
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Davomiyligi -->
+                        <div class="col-md-6">
+
+                            <label
+                                for="duration"
+                                class="form-label"
+                            >
+                                O‘qish davomiyligi
+                                <span class="required-mark">*</span>
+                            </label>
+
+                            <select
+                                id="duration"
+                                class="form-select"
+                                required
+                            >
+
+                                <option value="">
+                                    Davomiylikni tanlang
+                                </option>
+
+                                <option>1 oy</option>
+                                <option>2 oy</option>
+                                <option>3 oy</option>
+                                <option>4 oy</option>
+                                <option>5 oy</option>
+                                <option>6 oy</option>
+                                <option>7 oy</option>
+                                <option>8 oy</option>
+                                <option>9 oy</option>
+                                <option>10 oy</option>
+                                <option>11 oy</option>
+                                <option>12 oy</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Boshlanish sanasi -->
+                        <div class="col-md-6">
+
+                            <label
+                                for="startDate"
+                                class="form-label"
+                            >
+                                O‘qishni boshlagan sana
+                                <span class="required-mark">*</span>
+                            </label>
+
+                            <input
+                                type="date"
+                                id="startDate"
+                                class="form-control"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Tugash sanasi -->
+                        <div class="col-md-6">
+
+                            <label
+                                for="endDate"
+                                class="form-label"
+                            >
+                                O‘qishni tugatgan sana
+                                <span class="required-mark">*</span>
+                            </label>
+
+                            <input
+                                type="date"
+                                id="endDate"
+                                class="form-control"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Diplom sanasi -->
+                        <div class="col-md-6">
+
+                            <label
+                                for="issueDate"
+                                class="form-label"
+                            >
+                                Diplom berilgan sana
+                                <span class="required-mark">*</span>
+                            </label>
+
+                            <input
+                                type="date"
+                                id="issueDate"
+                                class="form-control"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Diplom raqami -->
+                        <div class="col-md-6">
+
+                            <label
+                                for="diplomaNo"
+                                class="form-label"
+                            >
+                                Diplom raqami
+                                <span class="required-mark">*</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="diplomaNo"
+                                class="form-control"
+                                placeholder="DIP-2026-01"
+                                readonly
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Rahbar -->
+                        <div class="col-md-6">
+
+                            <label
+                                for="director"
+                                class="form-label"
+                            >
+                                Rahbar F.I.Sh.
+                            </label>
+
+                            <input
+                                type="text"
+                                id="director"
+                                class="form-control"
+                                placeholder="Rahbarning F.I.Sh."
+                            >
+
+                        </div>
+
+
+                        <!-- Qo'shimcha izoh -->
+                        <div class="col-12">
+
+                            <label
+                                for="description"
+                                class="form-label"
+                            >
+                                Qo‘shimcha izoh
+                            </label>
+
+                            <textarea
+                                id="description"
+                                class="form-control"
+                                rows="4"
+                                placeholder="Diplomda chiqishi kerak bo‘lgan qo‘shimcha ma’lumot..."
+                            ></textarea>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Tugmalar -->
+                <div class="form-actions">
+
+                    <button
+                        type="reset"
+                        class="btn btn-clear"
+                    >
+                        <i class="bi bi-arrow-counterclockwise"></i>
+                        Tozalash
+                    </button>
+
+                    <a
+                        href="dashboard.html"
+                        class="btn btn-cancel"
+                    >
+                        <i class="bi bi-x-circle"></i>
+                        Bekor qilish
+                    </a>
+
+                    <button
+                        type="submit"
+                        class="btn btn-save"
+                    >
+                        <i class="bi bi-mortarboard-fill"></i>
+                        Diplom yaratish
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Chiroyli muvaffaqiyat xabari -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<!-- Diplom yaratish JavaScript fayli -->
+<script src="js/diploma-create.js"></script>
+<footer style="
+width:100%;
+margin-top:50px;
+background:#0f172a;
+border-top:4px solid #2563eb;
+box-shadow:0 -5px 20px rgba(0,0,0,.15);
+color:#cbd5e1;
+font-family:'Segoe UI',sans-serif;
+">
+
+<div style="
+max-width:1400px;
+margin:auto;
+padding:18px 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+gap:20px;
+">
+
+<div style="
+display:flex;
+align-items:center;
+gap:12px;
+font-size:15px;
+line-height:1.7;
+">
+
+<i class="bi bi-shield-check" style="
+font-size:22px;
+color:#3b82f6;
+"></i>
+
+<span>
+<strong style="color:#fff;">© 2026 Biznes fabrika.</strong>
+Barcha huquqlar himoyalangan.
+Mazkur dasturiy ta'minot O‘zbekiston Respublikasining
+mualliflik huquqi to‘g‘risidagi qonunchiligiga muvofiq himoyalangan.
+Dasturdan ruxsatsiz nusxa ko‘chirish, o‘zgartirish yoki tarqatish taqiqlanadi.
+</span>
+
+</div>
+
+<div style="
+display:flex;
+align-items:center;
+gap:10px;
+font-size:15px;
+">
+
+<i class="bi bi-code-slash" style="
+font-size:22px;
+color:#3b82f6;
+"></i>
+
+<span>Dasturchi:</span>
+
+<a
+href="https://telegram.me/Ziyovuddin02"
+target="_blank"
+style="
+color:#38bdf8;
+font-weight:700;
+text-decoration:none;
+"
+>
+B.Ziyovuddin
+</a>
+
+</div>
+
+</div>
+
+</footer>
+</body>
+
+</html>

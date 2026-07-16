@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Sertifikat</title>
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <link rel="stylesheet" href="css/certificate.css">
+</head>
+
+<body>
+
+<!-- Tugmalar -->
+<div class="certificate-actions no-print">
+
+    <button
+        type="button"
+        onclick="downloadCertificate()"
+        class="btn btn-primary shadow-sm"
+    >
+        <i class="bi bi-file-earmark-arrow-down-fill"></i>
+        PDF yuklab olish
+    </button>
+
+    <button
+        type="button"
+        onclick="window.print()"
+        class="btn btn-primary shadow-sm"
+    >
+        <i class="bi bi-printer-fill"></i>
+        Print
+    </button>
+
+    <button
+        type="button"
+        onclick="window.location.href='dashboard.html'"
+        class="btn btn-primary shadow-sm"
+    >
+        <i class="bi bi-arrow-left-circle-fill"></i>
+        Ortga
+    </button>
+
+</div>
+
+
+<!-- Sertifikat -->
+<div class="certificate-page" id="certificatePage">
+
+    <!-- Chap bezak -->
+    <div class="left-decoration">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- O‘ng yuqori bezak -->
+    <div class="corner-decoration"></div>
+
+    <div class="certificate-content">
+
+        <!-- Header -->
+        <header class="certificate-header">
+
+            <img
+                src="img/logo.png"
+                class="academy-logo"
+                alt="Dasturlash Akademiyasi"
+            >
+
+            <div class="academy-info">
+
+                <strong>
+                    BIZNES FABRIKA
+                </strong>
+
+                <span>
+                    O‘QUV MARKAZI
+                </span>
+
+            </div>
+
+            <div class="qr-wrapper">
+
+                <div id="qrcode"></div>
+
+                <small id="qrCertificateNo">
+                    CERT-2026-01
+                </small>
+
+            </div>
+
+        </header>
+
+
+        <!-- Asosiy qism -->
+        <main class="certificate-main">
+
+            <p class="certificate-small-title">
+                BIZNES FABRIKA O'QUV MARKAZI
+            </p>
+
+            <h1>SERTIFIKAT</h1>
+
+            <h3>
+                KURSNI MUVAFFAQIYATLI TAMOMLAGANLIK TO‘G‘RISIDA
+            </h3>
+
+            <h2 id="studentFullname">
+                BEKMURATOV ZIYOVUDDIN
+            </h2>
+
+            <div class="name-line"></div>
+
+            <!-- Faqat bitta customDescription -->
+            <p
+                class="custom-description"
+                id="customDescription"
+            >
+                Mazkur sertifikat kursni muvaffaqiyatli
+                tamomlaganligi munosabati bilan taqdim etildi.
+            </p>
+
+            <p class="date-description">
+
+                Ta’lim muddati:
+
+                <strong id="startDate">
+                    01.01.2026
+                </strong>
+
+                dan
+
+                <strong id="endDate">
+                    01.06.2026
+                </strong>
+
+                gacha.
+
+            </p>
+
+        </main>
+
+
+        <!-- Footer -->
+        <footer class="certificate-footer">
+
+            <div class="signature-block">
+
+                <div class="signature-line"></div>
+
+                <strong>
+                    O'tkirova X
+                </strong>
+
+                <span>
+                    Biznes fabrika direktori
+                </span>
+
+            </div>
+
+            <div class="certificate-number-block">
+
+                <span>
+                    Sertifikat raqami
+                </span>
+
+                <strong id="certificateNumber">
+                    CERT-2026-01
+                </strong>
+
+                <span>
+                    Berilgan sana:
+                    <b id="issueDate">
+                        13.07.2026
+                    </b>
+                </span>
+
+            </div>
+
+            <div class="signature-block">
+
+                <div class="signature-line"></div>
+
+                <strong>
+                    Mutaxasiss
+                </strong>
+
+                <span>
+                    fan ustozi
+                </span>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+</div>
+
+
+<!-- QR kutubxonasi certificate.js dan oldin -->
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+<script src="js/certificate.js"></script>
+
+</body>
+
+</html>

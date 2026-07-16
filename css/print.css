@@ -1,0 +1,352 @@
+/* ==========================
+   PRINT.CSS
+   Dasturlash Akademiyasi
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Times New Roman", serif;
+}
+
+body{
+    background:#ececec;
+    padding:0px;
+}
+
+/* Tugmalar */
+
+.buttons{
+    width:210mm;
+    margin:0 auto 20px;
+    display:flex;
+    justify-content:flex-end;
+    gap:10px;
+}
+
+.buttons button{
+    background:#0d6efd;
+    color:#fff;
+    border:none;
+    padding:10px 20px;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:15px;
+    transition:.3s;
+}
+
+.buttons button:hover{
+    background:#0b5ed7;
+}
+
+/* ==========================
+        A4 Qog'oz
+========================== */
+
+.certificate{
+
+    width:210mm;
+    min-height:297mm;
+
+    background:#fff;
+
+    margin:auto;
+
+    padding:0px 45px;
+
+   
+
+    box-shadow:0 0 15px rgba(0,0,0,.15);
+
+}
+
+/* ==========================
+        Header
+========================== */
+
+/* ================= Header ================= */
+
+.header{
+
+    display:grid;
+    grid-template-columns:1fr 180px 1fr;
+    align-items:center;
+    column-gap:35px;
+    margin-bottom:0px;
+
+}
+
+.left,
+.right{
+
+    text-align:center;
+
+}
+
+.left h3,
+.right h3{
+
+    font-size:15px;
+    font-weight:bold;
+    margin:4px 0;
+    color:#000;
+
+}
+
+.left h2,
+.right h2{
+
+    font-size:21px;
+    color:black;
+    font-weight:bold;
+    line-height:1.2;
+   
+}
+
+.left p,
+.right p{
+
+    font-size:18px;
+    margin-top:10px;
+
+}
+
+.center{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.gerb{
+
+    width:180px;
+    height:auto;
+
+}
+
+hr{
+
+    border:none;
+    border-top:3px solid #111112;
+    margin-top:0px;
+    margin-bottom:0px;
+
+}
+/* ==========================
+        Raqam va Sana
+========================== */
+
+.top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    font-size:18px;
+
+    margin-bottom:15px;
+
+}
+
+/* ==========================
+        Sarlavha
+========================== */
+
+.title{
+
+    text-align:center;
+
+    font-size:22px;
+
+    margin-bottom:40px;
+
+    letter-spacing:2px;
+
+}
+
+/* ==========================
+        Matn
+========================== */
+
+.content{
+
+    font-size:18px;
+
+    line-height:2;
+
+    text-align:justify;
+
+}
+
+.content p{
+
+    text-indent:50px;
+
+}
+
+.content b{
+
+    color:#000;
+
+}
+
+/* ==========================
+        Footer
+========================== */
+
+.footer{
+
+    margin-top:80px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-end;
+
+}
+
+.footer p{
+
+    font-size:18px;
+
+}
+
+.stamp{
+
+    width:140px;
+
+    height:140px;
+
+    border:3px dashed #777;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:bold;
+
+    color:#777;
+
+    font-size:20px;
+
+}
+
+/* ==========================
+        Print
+========================== */
+
+@media print {
+    
+
+    .no-print {
+        display: none !important;
+    }
+
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+        background: #fff;
+    }
+
+    .certificate {
+        width: 100%;
+        min-height: auto;
+        margin: 0 !important;
+        padding: 5mm 15mm 10mm 15mm !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    @page {
+        size: A4;
+        margin: 0;
+    }
+
+
+}
+.qr-section{
+    margin-top:40px;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    gap:15px;
+}
+
+.qr-box{
+    width:90px;
+    height:90px;
+    border:1px solid #999;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.qr-box img{
+    width:85px;
+    height:85px;
+}
+
+.qr-text{
+    width:180px;
+    font-size:12px;
+    line-height:18px;
+}
+/* ==========================
+    Bottom Section
+========================== */
+
+.bottom-section{
+
+    margin-top:50px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-end;
+
+}
+
+.stamp-area{
+
+    width:180px;
+
+    height:180px;
+
+}
+
+.qr-area{
+
+    text-align:center;
+
+}
+
+#qrcode{
+
+    width:100px;
+
+    height:100px;
+
+    margin:auto;
+
+}
+
+.qr-area p{
+
+    width:140px;
+
+    margin-top:8px;
+
+    font-size:11px;
+
+    line-height:16px;
+
+}

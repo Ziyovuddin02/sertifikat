@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ma'lumotnoma</title>
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<link rel="stylesheet" href="css/print.css">
+
+</head>
+<body>
+
+<div class="buttons no-print">
+    <button onclick="downloadCertificate()" class="btn btn-primary shadow-sm">
+    <i class="bi bi-download me-2"></i>
+    PDF Yuklab olish
+</button>
+
+<button onclick="window.print()" class="btn btn-success shadow-sm">
+    <i class="bi bi-printer-fill me-2"></i>
+    Chop etish
+</button>
+
+<button onclick="window.location.href='dashboard.html'" class="btn btn-secondary shadow-sm">
+    <i class="bi bi-arrow-left-circle me-2"></i>
+    Orqaga
+</button>
+
+</div>
+
+
+<div class="certificate">
+
+   <div class="header">
+
+    <div class="left">
+
+        <h3>TOSHKENT VILOYATI</h3>
+        <h3>CHINOZ TUMANI</h3>
+
+        <h3>BIZNES FABRIKA</h3>
+
+        <h3>O'QUV MARKAZI</h3>
+
+    </div>
+
+    <div class="center">
+
+        <img src="img/gerb.png" class="gerb" alt="O'zbekiston Gerbi">
+
+    </div>
+
+    <div class="right">
+
+        <h3>TASHKENT REGION</h3>
+        <h3>BUSINESS FACTORY</h3>
+
+        <h3>PROGRAMMING ACADEMY</h3>
+
+        <h3>TRAINING CENTRE</h3>
+
+    </div>
+
+</div>
+
+
+
+    <hr>
+<i style="text-align: center;">Toshkent viloyati Chinoz tumani Avg'on MFY ziyokor ko'chasi 17-uy</i> 
+    <div class="top">
+
+        <div>
+           <br> <b>№</b>
+            <span id="certificateNo">DA-1-0</span>
+        </div>
+
+        <div>
+           <br> <b>Sana:</b>
+            <span id="issueDate">12.07.2026</span>
+        </div>
+
+    </div>
+
+
+    <h1 class="title">
+        MA'LUMOTNOMA
+    </h1>
+
+
+    <div class="content">
+
+        <p>
+
+            Berildi ushbu ma'lumotnoma 
+
+            <b id="fullname">
+                Aliyev Ali
+            </b>
+ga
+
+
+        </p>
+
+      <p>
+    Ushbu fuqaro haqiqatdan ham
+
+    <b>"Biznes fabrika"</b>
+
+    o'quv markazida
+
+    <b id="course">Frontend Dasturlash</b>
+
+    kursida
+
+    <b id="startDate">15.07.2026</b>
+
+    sanadan
+
+    <b id="endDate">15.10.2026</b>
+
+    sanasiga qadar ushbu kursda belgilangan o'quv dasturi asosida
+
+    <b id="status"></b>.
+
+    Ushbu ma'lumotnoma fuqaroning mazkur davr mobaynida
+    o'quv markazi tinglovchisi ekanligini ma'lum qilamiz.
+</p>
+        <br>
+
+        <p> <b>  Mazkur ma'lumotnoma
+
+          
+                so'ralgan joyga taqdim etish uchun
+            
+
+            berildi.
+</b>
+
+          
+
+        </p>
+
+    </div>
+
+
+    <div class="footer">
+
+        <div>
+
+            <p style="display: inline;"><b>&nbsp;Biznes fabrika o'quv markazi direktori:  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_______________&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           &nbsp;&nbsp;&nbsp;  O'tkirova X</b></p> <br> <br>
+           <br><br>
+
+           
+
+        </div>
+
+        <div>
+
+           
+
+        </div>
+
+    </div>
+    
+<div class="bottom-section">
+
+
+
+    <div class="qr-area">
+
+        <div id="qrcode"></div>
+
+        <p>Ma'lumotnomani tekshirish uchun QR kodni skaner qiling.</p>
+
+    </div>
+
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script src="js/print.js"></script>
+
+
+
+</body>
+</html>
